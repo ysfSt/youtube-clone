@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.app {
+  height: 100%;
+  background-color: #f9f9f9;
+  .app__header {
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: sticky;
+    background-color: white;
+    z-index: 100;
+  }
+  .app__header--dark {
+    background-color: #202020;
+  }
+  .main {
+    margin-left: 18%;
+    height: 100%;
+  }
+}
+
+.app--dark {
+  color: white;
+  background-color: #181818;
+}
