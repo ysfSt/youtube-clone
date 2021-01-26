@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.scss";
 import Header from "./Header/Header";
 import { Switch as SwitchButton } from "@material-ui/core/";
+import SideBar from "./SideBar/SideBar";
 
 function App() {
   const [isDark, setIsDark] = useState(false);
@@ -15,6 +16,7 @@ function App() {
         <Header isChecked={isDark} />
         <SwitchButton className="switch" onChange={handleChange} />
       </div>
+      <SideBar isChecked={isDark} />
     </div>
   );
 }

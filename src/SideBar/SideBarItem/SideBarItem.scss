@@ -1,0 +1,42 @@
+.item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px;
+  padding-left: 25px;
+  width: 100%;
+  color: black;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &.selected {
+    background-color: #e5e5e5;
+    font-weight: 700;
+    svg {
+      fill: red;
+    }
+  }
+
+  svg {
+    margin-right: 20px;
+  }
+}
+
+.item--dark {
+  color: red;
+  &:hover {
+    background-color: #383838;
+  }
+  .item__title--dark {
+    color: white;
+  }
+  &.selected--dark {
+    background-color: #383838;
+    svg {
+      fill: white;
+    }
+  }
+}
