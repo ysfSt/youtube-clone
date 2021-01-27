@@ -1,0 +1,9 @@
+.videoContainer {
+  padding: 0 20px;
+  .videoContainer__body {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

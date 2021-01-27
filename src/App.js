@@ -3,6 +3,8 @@ import "./App.scss";
 import Header from "./Header/Header";
 import { Switch as SwitchButton } from "@material-ui/core/";
 import SideBar from "./SideBar/SideBar";
+import { Switch, Route } from "react-router-dom";
+import VideoContainer from "./VideoContainer/VideoContainer";
 
 function App() {
   const [isDark, setIsDark] = useState(false);
@@ -17,6 +19,11 @@ function App() {
         <SwitchButton className="switch" onChange={handleChange} />
       </div>
       <SideBar isChecked={isDark} />
+      <div className="main">
+        <Switch>
+          <Route path="/" exact component={VideoContainer} />
+        </Switch>
+      </div>
     </div>
   );
 }
