@@ -1,0 +1,24 @@
+.sideBarVideo {
+  display: flex;
+  padding: 10px 0;
+  //   border-bottom: 1px solid gray;
+
+  .videoCard__link {
+    display: contents;
+  }
+
+  .videoCard__thumbnail {
+    width: 45%;
+    height: 100%;
+  }
+  .videoCard__Info {
+    padding-left: 8px;
+    h5 {
+      padding-bottom: 5px;
+    }
+    p {
+      font-size: 0.8rem;
+      color: #606060;
+    }
+  }
+}

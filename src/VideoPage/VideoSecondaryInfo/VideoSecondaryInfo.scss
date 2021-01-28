@@ -1,0 +1,50 @@
+.secondary {
+  padding-top: 20px;
+
+  .secondary__Info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+    .channel {
+      display: flex;
+
+      .channelInfo {
+        width: 65%;
+        padding-left: 1rem;
+
+        .channelInfo__subsc {
+          color: #606060;
+        }
+
+        p {
+          font-size: 0.9rem;
+          padding: 5px;
+        }
+      }
+    }
+    .subscribeBtn {
+      margin-top: 10px;
+      padding: 10px 20px;
+      height: 41px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: white;
+      background-color: #cc0000;
+      border: none;
+      border-radius: 2px;
+    }
+  }
+
+  .comment {
+    padding: 1.2rem 0.8rem;
+    display: flex;
+    color: #606060;
+
+    .sortBy {
+      padding-left: 1.8rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

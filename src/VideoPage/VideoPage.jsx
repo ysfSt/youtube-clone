@@ -1,7 +1,10 @@
 import React from "react";
 import YouTube from "react-youtube";
-
 import "./VideoPage.scss";
+import SideBarVideo from "./SideBarVideo/SideBarVideo";
+import VideoPrimaryInfo from './VideoPrimaryInfo/VideoPrimaryInfo'
+import VideoSecondaryInfo from './VideoSecondaryInfo/VideoSecondaryInfo'
+
 
 const opts = {
   height: "450",
@@ -19,7 +22,18 @@ const VideoPage = (props) => {
     <div className="videoPage">
       <div className="videoPage__player">
         {id && <YouTube videoId={`${id}`} opts={opts} />}
+        <VideoPrimaryInfo item={item} isChecked={props.isChecked} />
+        <VideoSecondaryInfo item={item} isChecked={props.isChecked} />
         </div>
+        <div className="sideBar">
+        <h3 className="sideBar__header">Up next</h3>
+        {data.map((item) => {
+          if (item.id !== id) {
+            return <SideBarVideo item={item} data = {data}/>;
+          }
+          return null;
+        })}
+      </div>
       
       .
     </div>

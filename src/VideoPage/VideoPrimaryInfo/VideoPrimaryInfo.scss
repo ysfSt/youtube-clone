@@ -1,0 +1,30 @@
+* {
+  list-style: none;
+}
+
+.primary {
+  border-bottom: 1px solid gray;
+  padding-bottom: 24px;
+
+  .primary__title {
+    padding-top: 20px;
+  }
+  .primary__info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    color: #606060;
+
+    svg {
+      margin-right: 10px;
+    }
+    ul {
+      display: flex;
+      li {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+      }
+    }
+  }
+}
